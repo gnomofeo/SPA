@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-export interface heroe{ 
+export interface Heroes{ 
   nombre: string;
   bio:string;
   img: string;
@@ -15,7 +15,7 @@ export interface heroe{
 export class HeroesService {
 
 
-  heroes:heroe[]= 
+  heroes:Heroes[]= 
     [
       {
         nombre: "Aquaman",
@@ -69,7 +69,7 @@ export class HeroesService {
     ];
 
   constructor() { }
-    getheroes(){
+    getHeroes(){
       return this.heroes;
 
     }
